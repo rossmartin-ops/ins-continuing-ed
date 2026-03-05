@@ -32,7 +32,17 @@
 
 ## Open Questions
 
-- [ ] What is TDI's approval timeline after submission?
-- [ ] Do existing courses already have any quiz infrastructure in Jarvis that can be reused?
-- [ ] Which course units map to which CE hours (for timed content validation)?
-- [ ] LX capacity: who owns quiz writing vs. course updates?
+- [ ] What is TDI's actual approval turnaround time? (recommend direct email to CE@tdi.texas.gov — only "at least 2 weeks before launch" is published, no hard SLA)
+- [ ] Which course units map to which CE hours (for timed content validation)? (in progress — see courses/overview.md)
+- [ ] LX capacity: who owns quiz writing vs. course updates? (needs team decision)
+
+## Resolved Questions
+
+- [x] **Do existing courses have quiz infrastructure in Jarvis?** No — all 5 courses are 100% reading screens (FULL_SCREEN nodes only). Classroom equivalent quiz checkpoints are entirely net-new work.
+  - GEN.INS-CE-ETH: 93 screens, 0 quiz screens
+  - GEN.INS-CE-LHOPT: 321 screens, 0 quiz screens
+  - GEN.INS-CE-PCPER: 325 screens, 0 quiz screens
+  - GEN.INS-CE-LHPRD: 326 screens, 0 quiz screens
+  - GEN.INS-CE-PCCOM: 369 screens, 0 quiz screens
+
+- [x] **TDI course registration process:** Submissions via Sircon. Fee: $10/credit hour (non-refundable). Modifications >25% require full new registration. Status: CE_Providers@pearson.com. General: CE@tdi.texas.gov.
