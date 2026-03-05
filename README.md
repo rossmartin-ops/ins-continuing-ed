@@ -53,10 +53,14 @@ Requirements for self-study:
 ## Repo Structure
 
 ```
-/courses          - Per-course planning docs and content notes
+/courses          - Full L-version course content (source of truth) and overview
+/states           - Per-state content manifests defining which levels to include
+  /tx             - Texas build: level selections, hours, quiz/exam requirements
 /research         - Regulatory research, competitor analysis, TDI references
 /planning         - Project plans, timelines, LX capacity notes
 ```
+
+Source course JSONs are the L (large) versions — the complete content library. State manifests select from these to hit each state's required hours without modifying the source.
 
 ## Key Links
 

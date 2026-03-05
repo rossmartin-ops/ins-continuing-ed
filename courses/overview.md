@@ -1,9 +1,11 @@
 # Course Overview — TX INS CE Package
 
 5-course package covering Life, Health, Property & Casualty license types.
-All courses are the "L" (large) version. All screens are currently FULL_SCREEN reading nodes — no quiz infrastructure exists in any course.
+All courses are the "L" (large) version — the full content library. All screens are currently FULL_SCREEN reading nodes — no quiz infrastructure exists in any course.
 
-Estimated hours per level are proportional to word count vs. total TX credit hours for that course.
+**Hours shown here are L-version maximums.** State-specific builds select a subset of levels to hit each state's required hours. See `states/<state>/manifest.md` for the actual level selections per state.
+
+Hours calculated using TDI Basic formula: words ÷ 180 ÷ 50 = credit hours
 
 ---
 
