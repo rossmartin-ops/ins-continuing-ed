@@ -130,11 +130,32 @@ Prioritize Tier 4 states by market size. FL and NY are likely highest value give
 
 ---
 
+## Question Requirements — Verify Before Writing
+
+These items affect scope and should be confirmed before the question-writing phase begins:
+
+**1. Question bank size (high priority — verify for TX first)**
+Many states require a randomized question bank 2–3× larger than the actual exam shown, so learners see different questions each attempt. If TX requires a 3× bank, a 54-question exam requires 162 questions written. This has not been confirmed with TDI. Email CE@tdi.texas.gov to verify before writing exam questions.
+
+**2. Proctored self-study exam states (platform issue)**
+11 states require self-study final exams to be monitored by a disinterested third party: CT, MA, DC, WV, GA, AL, MS, AR, IA, NV, HI. This is a platform/delivery configuration question, not a content issue — but it must be resolved before launching self-study courses in these states.
+
+**3. Iowa: closed-book exam required**
+Iowa is the only state that requires a closed-book self-study final exam. All other states allow open-book. IA exam questions must be knowledge-based — avoid any question style that assumes the learner can look up the answer. Write IA exam questions as a separate set when that state is built.
+
+**4. Classroom equivalent quiz minimums**
+TDI and most states do not specify a minimum number of questions per chapter checkpoint quiz. Our standard of 10 questions per checkpoint is a design choice, not a regulatory requirement. Could be reduced to 5 per checkpoint if capacity is a concern without affecting compliance.
+
+---
+
 ## Open Items
 
-- [ ] Complete TX quiz and exam questions
+- [ ] Verify TX question bank size requirement with TDI (CE@tdi.texas.gov) before writing exam questions
+- [ ] Complete TX quiz checkpoint questions (20 checkpoints × 10 questions = 200)
+- [ ] Complete TX final exam questions (54 questions each for LHPRD and PCCOM)
 - [ ] Submit TX courses to TDI via Sircon
 - [ ] Confirm TDI approval timeline (email CE@tdi.texas.gov)
+- [ ] Resolve proctored exam platform approach for 11 states before launching self-study there
 - [ ] Decide build order for post-TX states
 - [ ] Decide whether to invest in MA/AZ content gap
 - [ ] Identify which Tier 4 state to tackle first

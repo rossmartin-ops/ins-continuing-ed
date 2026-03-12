@@ -7,162 +7,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css" />
   <style>
     :root {
-      --aceable-blue: #1a3d6e;
-      --aceable-green: #00b894;
-      --aceable-light: #f0f4f8;
-      --accent: #e17055;
+      --blue: #1a3d6e;
+      --green: #00b894;
+      --light: #f0f4f8;
+      --orange: #e17055;
     }
-    .reveal {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    }
-    .reveal h1, .reveal h2, .reveal h3 {
-      color: var(--aceable-blue);
-      text-transform: none;
-      letter-spacing: -0.02em;
-    }
-    .reveal h1 { font-size: 2.2em; }
-    .reveal h2 { font-size: 1.6em; }
-    .reveal p, .reveal li { color: #333; font-size: 0.9em; line-height: 1.6; }
-    .reveal .slides section { padding: 40px 60px; }
+    .reveal { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .reveal h1, .reveal h2, .reveal h3 { color: var(--blue); text-transform: none; letter-spacing: -0.02em; margin-bottom: 0.4em; }
+    .reveal h1 { font-size: 1.7em; }
+    .reveal h2 { font-size: 1.2em; }
+    .reveal h3 { font-size: 0.9em; }
+    .reveal p, .reveal li { font-size: 0.7em; line-height: 1.4; color: #333; margin: 0.15em 0; }
+    .reveal .slides section { padding: 16px 36px; box-sizing: border-box; }
 
-    /* Title slide */
-    .title-slide { background: var(--aceable-blue) !important; }
-    .title-slide h1, .title-slide h2, .title-slide p { color: white !important; }
-    .title-slide .subtitle { color: rgba(255,255,255,0.75) !important; font-size: 1.1em; }
+    /* Dark title */
+    .dark { background: var(--blue) !important; }
+    .dark h1, .dark h2, .dark p, .dark span { color: white !important; }
+    .dark .sub { color: rgba(255,255,255,0.65) !important; }
 
-    /* Big number callout */
-    .big-number {
-      font-size: 3.5em;
-      font-weight: 800;
-      color: var(--aceable-green);
-      line-height: 1;
-      display: block;
-    }
-    .big-label {
-      font-size: 0.85em;
-      color: #666;
-      display: block;
-      margin-top: 4px;
-    }
+    /* Big stat */
+    .big { font-size: 2.8em; font-weight: 800; color: var(--green); line-height: 1; display: block; }
+    .lbl { font-size: 0.7em; color: #666; display: block; }
 
-    /* Stat boxes */
-    .stat-row {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      margin: 24px 0;
-    }
-    .stat-box {
-      background: var(--aceable-light);
-      border-radius: 12px;
-      padding: 24px 28px;
-      flex: 1;
-      text-align: center;
-      border-top: 4px solid var(--aceable-green);
-    }
-    .stat-box.blue { border-top-color: var(--aceable-blue); }
-    .stat-box.orange { border-top-color: var(--accent); }
+    /* Boxes */
+    .row { display: flex; gap: 14px; margin: 10px 0; }
+    .box { background: var(--light); border-radius: 8px; padding: 10px 12px; flex: 1; border-top: 3px solid var(--green); }
+    .box.blue { border-top-color: var(--blue); }
+    .box.orange { border-top-color: var(--orange); }
+    .box h3 { color: var(--blue); margin: 0 0 6px 0; font-size: 0.78em; }
+    .box p { margin: 0; font-size: 0.72em; }
+    .box .n { font-size: 1.6em; font-weight: 800; color: var(--green); line-height: 1; display: block; margin-bottom: 3px; }
+    .box.orange .n { color: var(--orange); }
 
-    /* Tier cards */
-    .tier-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 16px;
-    }
-    .tier-card {
-      background: var(--aceable-light);
-      border-radius: 10px;
-      padding: 18px 20px;
-      text-align: left;
-    }
-    .tier-card h4 {
-      color: var(--aceable-blue);
-      margin: 0 0 8px 0;
-      font-size: 0.85em;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .tier-card .tier-count {
-      font-size: 2em;
-      font-weight: 800;
-      color: var(--aceable-green);
-      line-height: 1;
-    }
-    .tier-card.blocked .tier-count { color: var(--accent); }
-    .tier-card p { font-size: 0.75em; margin: 6px 0 0 0; color: #555; }
+    /* Tables */
+    .reveal table { font-size: 0.62em; width: 100%; border-collapse: collapse; margin: 6px 0; }
+    .reveal table th { background: var(--blue); color: white; padding: 5px 8px; text-align: left; }
+    .reveal table td { padding: 4px 8px; border-bottom: 1px solid #ddd; line-height: 1.3; white-space: nowrap; }
+    .reveal table td.wrap { white-space: normal; }
+    .reveal table tr:nth-child(even) td { background: var(--light); }
 
-    /* Content table */
-    .reveal table {
-      font-size: 0.78em;
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .reveal table th {
-      background: var(--aceable-blue);
-      color: white;
-      padding: 10px 14px;
-      text-align: left;
-      font-weight: 600;
-    }
-    .reveal table td {
-      padding: 9px 14px;
-      border-bottom: 1px solid #e0e0e0;
-      color: #333;
-    }
-    .reveal table tr:nth-child(even) td { background: var(--aceable-light); }
+    /* Phases */
+    .phases { list-style: none; padding: 0; margin: 8px 0; }
+    .phases li { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+    .num { background: var(--blue); color: white; border-radius: 50%; width: 26px; height: 26px;
+           display: flex; align-items: center; justify-content: center; font-weight: 700;
+           font-size: 0.75em; flex-shrink: 0; margin-top: 2px; }
+    .num.now { background: var(--green); }
+    .phases h4 { margin: 0 0 2px 0; color: var(--blue); font-size: 0.78em; }
+    .phases p { margin: 0; font-size: 0.7em; color: #555; }
 
-    /* Phase timeline */
-    .phase-list { list-style: none; padding: 0; margin: 0; }
-    .phase-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-    .phase-num {
-      background: var(--aceable-blue);
-      color: white;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.95em;
-      flex-shrink: 0;
-    }
-    .phase-num.active { background: var(--aceable-green); }
-    .phase-content h4 { margin: 0 0 4px 0; color: var(--aceable-blue); font-size: 0.9em; }
-    .phase-content p { margin: 0; font-size: 0.78em; color: #555; }
+    /* Callout */
+    .callout { background: var(--blue); color: white; border-radius: 8px; padding: 10px 14px; margin: 8px 0; }
+    .callout p { color: rgba(255,255,255,0.9); font-size: 0.78em; margin: 0; }
+    .callout strong { color: var(--green); }
 
-    /* Highlight box */
-    .highlight-box {
-      background: var(--aceable-blue);
-      color: white;
-      border-radius: 12px;
-      padding: 24px 32px;
-      margin: 20px 0;
-    }
-    .highlight-box p { color: rgba(255,255,255,0.9); font-size: 1em; margin: 0; }
-    .highlight-box strong { color: var(--aceable-green); }
+    /* Grid */
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0; }
 
-    /* Tag pills */
-    .tag { display: inline-block; background: var(--aceable-light); border-radius: 20px;
-           padding: 4px 12px; font-size: 0.72em; color: var(--aceable-blue);
-           font-weight: 600; margin: 3px; border: 1px solid #ccd; }
-    .tag.green { background: #d4f5ec; color: #006644; border-color: #99ddc8; }
-    .tag.orange { background: #fdecea; color: #9b2226; border-color: #f5b8b0; }
-
-    /* Footer */
-    .slide-footer {
-      position: absolute;
-      bottom: 12px;
-      right: 24px;
-      font-size: 0.55em;
-      color: #aaa;
-    }
+    .tag-green { color: var(--green); font-weight: 700; }
+    .tag-orange { color: var(--orange); font-weight: 700; }
+    .muted { color: #888; font-size: 0.65em !important; }
   </style>
 </head>
 <body>
@@ -170,199 +74,234 @@
   <div class="slides">
 
     <!-- 1: Title -->
-    <section class="title-slide" data-background-color="#1a3d6e">
-      <h1 style="font-size:2.4em; margin-bottom: 12px;">Insurance CE Expansion</h1>
-      <p class="subtitle">A national catalog — built once, deployed everywhere</p>
+    <section class="dark" data-background-color="#1a3d6e">
       <br>
-      <p style="font-size:0.8em; color:rgba(255,255,255,0.5);">2026 Plan Overview</p>
+      <h1>Insurance CE Expansion</h1>
+      <p class="sub" style="font-size:1em; margin-top:8px;">A national catalog — built once, deployed everywhere</p>
+      <br><br>
+      <p class="sub">2026 Plan Overview</p>
     </section>
 
     <!-- 2: The Opportunity -->
     <section>
       <h2>The opportunity</h2>
-      <p>Licensed insurance producers in every US state are required to complete continuing education every renewal cycle. It's mandatory, recurring, and largely unsolved for digital-first providers.</p>
-      <div class="stat-row">
-        <div class="stat-box">
-          <span class="big-number">48</span>
-          <span class="big-label">target states</span>
+      <p>Licensed insurance producers in every US state must complete continuing education every renewal cycle. It's mandatory, recurring, and largely unsolved for digital-first providers.</p>
+      <div class="row" style="margin-top:16px;">
+        <div class="box" style="text-align:center;">
+          <span class="big">48</span>
+          <span class="lbl">target states</span>
         </div>
-        <div class="stat-box blue">
-          <span class="big-number">24</span>
-          <span class="big-label">avg CE hours required per cycle</span>
+        <div class="box blue" style="text-align:center;">
+          <span class="big">24</span>
+          <span class="lbl">avg CE hours required per cycle</span>
         </div>
-        <div class="stat-box">
-          <span class="big-number">2yr</span>
-          <span class="big-label">typical renewal cycle</span>
+        <div class="box" style="text-align:center;">
+          <span class="big">2yr</span>
+          <span class="lbl">typical renewal cycle</span>
         </div>
       </div>
-      <p style="text-align:center; color: #555;">Every licensed producer needs to complete CE — repeatedly — for as long as they hold a license.</p>
+      <p class="muted" style="text-align:center; margin-top:10px;">Every licensed producer needs CE — repeatedly — for as long as they hold a license.</p>
     </section>
 
-    <!-- 3: What we already have -->
+    <!-- 3: What we have -->
     <section>
       <h2>We already have the content</h2>
-      <p>5 courses migrated from REI cover the full range of L&amp;H and P&amp;C topics. Together they represent <strong>~37 hours</strong> of CE-ready content.</p>
+      <p>5 courses covering the full range of L&H and P&C topics — <strong>~37 hours</strong> of CE-ready material.</p>
       <table>
-        <thead><tr><th>Course</th><th>Topics</th><th>Hours</th><th>Type</th></tr></thead>
+        <thead><tr><th>Course</th><th>Topics</th><th>Hrs</th><th>Type</th></tr></thead>
         <tbody>
-          <tr><td>Insurance Ethics &amp; Fraud</td><td>Ethics, fraud prevention</td><td>2.7</td><td>Classroom Equiv</td></tr>
-          <tr><td>Life &amp; Health Insurance Options</td><td>Disability, LTC, Medicare</td><td>8.6</td><td>Classroom Equiv</td></tr>
-          <tr><td>Personal Lines P&amp;C</td><td>Homeowners, Auto</td><td>8.2</td><td>Classroom Equiv</td></tr>
+          <tr><td>Insurance Ethics &amp; Fraud</td><td>Ethics, fraud prevention</td><td>2.7</td><td>Classroom</td></tr>
+          <tr><td>Life &amp; Health Insurance Options</td><td>Disability, LTC, Medicare</td><td>8.6</td><td>Classroom</td></tr>
+          <tr><td>Personal Lines P&amp;C</td><td>Homeowners, Auto</td><td>8.2</td><td>Classroom</td></tr>
           <tr><td>L&amp;H Products &amp; Compliance</td><td>Life, Health, HIPAA</td><td>9.5</td><td>Self-Study</td></tr>
           <tr><td>Commercial P&amp;C</td><td>Commercial GL, Workers Comp</td><td>8.5</td><td>Self-Study</td></tr>
-          <tr><td><strong>Total</strong></td><td></td><td><strong>~37 hrs</strong></td><td></td></tr>
         </tbody>
       </table>
-      <p style="font-size:0.75em; color:#777; margin-top:12px;">Built modularly — content can be trimmed or expanded per state requirement.</p>
+      <div class="callout" style="margin-top:12px;">
+        <p>These courses are already built. No writing required to launch in <strong>39 states</strong>.</p>
+      </div>
     </section>
 
     <!-- 4: Two delivery types -->
     <section>
-      <h2>Two delivery types — already defined</h2>
-      <div style="display:flex; gap:24px; margin-top:16px;">
-        <div class="stat-box" style="text-align:left; flex:1;">
-          <h4 style="color:var(--aceable-blue); margin:0 0 10px 0; font-size:0.9em;">🏫 Classroom Equivalent</h4>
-          <p>Forced chapter progression. Embedded quiz at the end of each chapter (70% to pass). Reading screens are timed. No final exam.</p>
-          <p style="margin-top:8px; color:var(--aceable-green); font-weight:600;">Counts toward classroom minimum most states require.</p>
+      <h2>Two delivery types — already built</h2>
+      <div class="row">
+        <div class="box" style="text-align:left;">
+          <h3>🏫 Classroom Equivalent</h3>
+          <p>Forced chapter progression. Quiz per chapter (70% to pass). Reading screens are timed. No final exam.</p>
+          <p style="margin-top:6px;" class="tag-green">✓ Covers classroom minimum required by most states.</p>
+          <p style="margin-top:4px;" class="muted">3 of our 5 courses use this format.</p>
         </div>
-        <div class="stat-box blue" style="text-align:left; flex:1;">
-          <h4 style="color:var(--aceable-blue); margin:0 0 10px 0; font-size:0.9em;">📖 Self-Study</h4>
-          <p>Self-paced. Single final exam at the end (min 10 questions per credit hour, 70% pass). No proctoring required.</p>
-          <p style="margin-top:8px; color:var(--aceable-blue); font-weight:600;">Counts toward self-study allowance (typically up to 12 hrs).</p>
+        <div class="box blue" style="text-align:left;">
+          <h3>📖 Self-Study</h3>
+          <p>Self-paced. Single final exam (min 10 questions per credit hour, 70% pass). No proctoring required in most states.</p>
+          <p style="margin-top:6px; color:var(--blue); font-weight:600;">✓ Fills the remaining required hours.</p>
+          <p style="margin-top:4px;" class="muted">2 of our 5 courses use this format.</p>
         </div>
       </div>
-      <div class="highlight-box" style="margin-top:20px;">
-        <p>For most states, our 3 classroom equivalent courses cover the minimum requirement. Our 2 self-study courses fill the remainder. <strong>The split is already built.</strong></p>
-      </div>
+      <p style="margin-top:10px; text-align:center; font-size:0.72em; color:#555;">The split is already designed in. No decisions needed — it works out of the box.</p>
     </section>
 
-    <!-- 5: Texas is in build -->
+    <!-- 5: Texas -->
     <section>
       <h2>Texas is in build now</h2>
-      <p>TX requires 24 hrs — min 12 classroom equivalent, max 12 self-study, min 3 ethics. Our content selection hits 23.87 hrs exactly.</p>
+      <p>TX: 24 hrs total — min 12 classroom equivalent, max 12 self-study, min 3 ethics. Our selection hits <strong>23.87 hrs</strong>.</p>
       <table>
-        <thead><tr><th>Course</th><th>Type</th><th>TX Hours</th></tr></thead>
+        <thead><tr><th>Course</th><th>Type</th><th>Hrs</th></tr></thead>
         <tbody>
-          <tr><td>Insurance Ethics &amp; Fraud</td><td>Classroom Equiv</td><td>2.70 hrs</td></tr>
-          <tr><td>Life &amp; Health Insurance Options</td><td>Classroom Equiv</td><td>6.19 hrs</td></tr>
-          <tr><td>Personal Lines P&amp;C</td><td>Classroom Equiv</td><td>4.21 hrs</td></tr>
-          <tr><td>L&amp;H Products &amp; Compliance</td><td>Self-Study</td><td>5.41 hrs</td></tr>
-          <tr><td>Commercial P&amp;C</td><td>Self-Study</td><td>5.36 hrs</td></tr>
-          <tr><td><strong>Total</strong></td><td><strong>13.1 classroom / 10.8 self-study</strong></td><td><strong>23.87 hrs ✓</strong></td></tr>
+          <tr><td>Insurance Ethics &amp; Fraud</td><td>Classroom</td><td>2.70</td></tr>
+          <tr><td>Life &amp; Health Insurance Options</td><td>Classroom</td><td>6.19</td></tr>
+          <tr><td>Personal Lines P&amp;C</td><td>Classroom</td><td>4.21</td></tr>
+          <tr><td>L&amp;H Products &amp; Compliance</td><td>Self-Study</td><td>5.41</td></tr>
+          <tr><td>Commercial P&amp;C</td><td>Self-Study</td><td>5.36</td></tr>
         </tbody>
       </table>
-      <p style="font-size:0.75em; color: var(--aceable-green); margin-top:10px; font-weight:600;">TX sets the template. Every other state is a variation of this.</p>
+      <p class="tag-green" style="margin-top:6px; font-size:0.7em;">Total: 13.1 hrs classroom equiv + 10.8 hrs self-study = <strong>23.87 hrs ✓</strong> — TX sets the template. Every other state is a variation of this.</p>
     </section>
 
-    <!-- 6: The 39-state opportunity -->
+    <!-- 5b: Question requirements -->
+    <section>
+      <h2>Question requirements — verify before writing</h2>
+      <div class="grid2">
+        <div class="box orange">
+          <h3>⚠️ Question bank size</h3>
+          <p>Many states require a randomized bank 2–3× larger than the actual exam shown (e.g., 162 questions written to deliver a 54-question exam). <strong>Not yet confirmed for TX.</strong></p>
+          <p style="margin-top:4px;" class="muted">Verify with TDI before writing questions — could multiply the workload significantly.</p>
+        </div>
+        <div class="box orange">
+          <h3>⚠️ 11 states require proctored exams</h3>
+          <p>CT, MA, DC, WV, GA, AL, MS, AR, IA, NV, HI require self-study final exams to be monitored by a disinterested third party.</p>
+          <p style="margin-top:4px;" class="muted">Platform/delivery issue, not a content issue — but must be resolved before launching self-study in these states.</p>
+        </div>
+        <div class="box blue">
+          <h3>Iowa: closed-book only</h3>
+          <p>Every other state allows open-book self-study exams. Iowa requires closed-book.</p>
+          <p style="margin-top:4px;" class="muted">Questions for IA must be knowledge-based — no "look it up" style questions. Write IA exam questions separately.</p>
+        </div>
+        <div class="box">
+          <h3>Classroom quiz minimums</h3>
+          <p>TDI (and most states) don't specify a minimum question count per chapter quiz. Our standard of 10 questions per checkpoint is a design choice, not a regulatory floor.</p>
+          <p style="margin-top:4px;" class="muted">Could be reduced to 5 per checkpoint if LX capacity is a concern.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6: 39 states -->
     <section>
       <h2>39 states — ready to build today</h2>
-      <div class="highlight-box">
-        <p>With the content we already have, we can launch in <strong>39 states</strong> without writing a single new course. Each state needs only a Jarvis build and a small set of quiz/exam questions.</p>
-      </div>
-      <div class="tier-grid">
-        <div class="tier-card">
-          <h4>Tier 1 — Clone TX</h4>
-          <span class="tier-count">4</span>
-          <p>NJ, VT, NC, UT — same structure as TX, near-zero incremental work</p>
+      <p>With existing content, we can launch in <strong>39 states</strong> without writing a single new course. Each needs only a Jarvis build and quiz/exam questions.</p>
+      <div class="grid2" style="margin-top:8px;">
+        <div class="box">
+          <h3>Tier 1 — Clone TX</h3>
+          <span class="n">4 states</span>
+          <p>NJ, VT, NC, UT — identical structure to TX. Near-zero incremental work.</p>
         </div>
-        <div class="tier-card">
-          <h4>Tier 2 — 24 hrs, flexible delivery</h4>
-          <span class="tier-count">28</span>
-          <p>No split mandate. TX content selection covers all of them.</p>
+        <div class="box">
+          <h3>Tier 2 — 24 hrs, flexible delivery</h3>
+          <span class="n">28 states</span>
+          <p>No split mandate. TX content covers all of them. Same build pattern.</p>
         </div>
-        <div class="tier-card">
-          <h4>Tier 3 — Different hour totals</h4>
-          <span class="tier-count">7</span>
-          <p>MO, VA, KS, NV, IA + 2 others. Most covered by existing catalog.</p>
+        <div class="box blue">
+          <h3>Tier 3 — Different hour totals</h3>
+          <span class="n" style="color:var(--blue);">7 states</span>
+          <p>MO, VA, KS, NV, IA covered by existing catalog. MA + AZ need more content.</p>
         </div>
-        <div class="tier-card blocked">
-          <h4>Tier 4 — New content needed</h4>
-          <span class="tier-count">9</span>
-          <p>State-specific content required. Partial launches possible in 2 of 9.</p>
+        <div class="box orange">
+          <h3>Tier 4 — State-specific content needed</h3>
+          <span class="n">9 states</span>
+          <p>CT, NY, FL, OK, MT, OR, CO, WI, IN. Partial launches possible in WI + IN.</p>
         </div>
       </div>
     </section>
 
-    <!-- 7: Delivery flexibility explained -->
+    <!-- 7: Flexible delivery explained -->
     <section>
-      <h2>What "flexible delivery" means for Tier 2</h2>
-      <p>Some states (TX, NJ, VT, NC, UT) mandate a specific split — e.g., <em>at least 12 hours must be classroom equivalent.</em></p>
-      <p style="margin-top: 8px;">Tier 2 states have <strong>no such mandate</strong>. A licensed producer could take all 24 hours as self-study, or all as classroom equivalent, or any mix.</p>
-      <div class="stat-row" style="margin-top:20px;">
-        <div class="stat-box" style="text-align:left;">
-          <p style="font-weight:600; color: var(--aceable-blue); margin:0 0 6px 0;">What this means for us:</p>
-          <p>We use the TX split (13 hrs classroom / 11 hrs self-study) as our default for all Tier 2 states — it's already built and it satisfies every requirement. But if a state's market demands a different approach, we have room to adjust without rebuilding from scratch.</p>
+      <h2>What "flexible delivery" means</h2>
+      <div class="row">
+        <div class="box blue" style="text-align:left;">
+          <h3>Split-mandate states (TX, NJ, VT, NC, UT)</h3>
+          <p>Regulations require: at least 12 hrs classroom equivalent, max 12 hrs self-study.</p>
+          <p style="margin-top:4px;" class="muted">No flexibility — the ratio is set by law.</p>
+        </div>
+        <div class="box" style="text-align:left;">
+          <h3>Tier 2 — No split mandate (28 states)</h3>
+          <p>No ratio required. All 24 hours could be self-study, all classroom, or any mix.</p>
+          <p style="margin-top:4px;" class="tag-green">We use the TX split as default — already built, satisfies every requirement. We can adjust per market if needed.</p>
         </div>
       </div>
-    </section>
-
-    <!-- 8: Content we need to create -->
-    <section>
-      <h2>Content we need to create</h2>
-      <p>Four states require investment in new content before they can launch:</p>
-      <table>
-        <thead><tr><th>State</th><th>What's Needed</th><th>Why</th><th>Effort</th></tr></thead>
+      <table style="margin-top:10px;">
+        <thead><tr><th>Delivery approach</th><th>Works for split-mandate states?</th><th>Works for flexible states?</th></tr></thead>
         <tbody>
-          <tr>
-            <td><strong>MA</strong></td>
-            <td>~8–23 hrs additional generic CE</td>
-            <td>MA requires 45–60 hrs per 3-yr cycle. We have ~37 hrs.</td>
-            <td>High — new course modules</td>
-          </tr>
-          <tr>
-            <td><strong>AZ</strong></td>
-            <td>~11 hrs additional generic CE</td>
-            <td>AZ requires 48 hrs per 4-yr cycle. We have ~37 hrs.</td>
-            <td>Medium — draw from reserve content first</td>
-          </tr>
-          <tr>
-            <td><strong>MO</strong></td>
-            <td>Verify ethics coverage only</td>
-            <td>MO's 3-hr ethics requirement includes MO law &amp; suitability — likely covered by our existing Ethics course, but needs confirmation.</td>
-            <td>Low — verification, not new content</td>
-          </tr>
-          <tr>
-            <td><strong>FL</strong></td>
-            <td>FL Law &amp; Ethics Update (4 hrs, license-type specific)</td>
-            <td>FL mandates a state-specific ethics/law course each cycle. Must be separate versions for L&amp;H and P&amp;C licenses.</td>
-            <td>Medium — 2 versions of a 4-hr course</td>
-          </tr>
+          <tr><td>TX split (13 classroom / 11 self-study)</td><td class="tag-green">✓ Yes</td><td class="tag-green">✓ Yes</td></tr>
+          <tr><td>All self-study</td><td class="tag-orange">✗ No</td><td class="tag-green">✓ Yes</td></tr>
         </tbody>
       </table>
-      <p style="font-size:0.75em; color:#777; margin-top:10px;">MA and AZ content gaps can be filled by developing the reserve content already identified in the catalog (annuities, commercial auto, E&amp;O, EPLI, etc.) — material that exists in a draft form.</p>
+    </section>
+
+    <!-- 8a: Content needed — MA & AZ -->
+    <section>
+      <h2>Content gaps: MA &amp; AZ</h2>
+      <p>Two high-hour states need more content than our ~37 hrs catalog provides.</p>
+      <table>
+        <thead><tr><th>State</th><th>Required</th><th>We Have</th><th>Gap</th></tr></thead>
+        <tbody>
+          <tr><td><strong>MA</strong></td><td>45–60 hrs (3-yr)</td><td>~37 hrs</td><td>8–23 hrs</td></tr>
+          <tr><td><strong>AZ</strong></td><td>48 hrs (4-yr)</td><td>~37 hrs</td><td>~11 hrs</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:8px; font-size:0.72em; color:#333;"><strong>Path forward:</strong> We have <span class="tag-green">13.5 hrs of reserve content</span> — chapters trimmed from other state builds — that can be activated before writing anything new. AZ's 11-hr gap may be fully covered by reserve content alone. MA's gap is larger and will likely need new generic modules (annuities, commercial auto, E&O).</p>
+      <p style="margin-top:6px; font-size:0.72em; color:#333;"><strong>Recommendation:</strong> Confirm AZ with reserve content first. Evaluate MA market size vs. content investment before committing.</p>
+    </section>
+
+    <!-- 8b: Content needed — MO & FL -->
+    <section>
+      <h2>Content gaps: MO &amp; FL</h2>
+      <div class="row">
+        <div class="box" style="text-align:left;">
+          <h3>MO — Missouri <span class="tag-green" style="font-size:0.9em;">Likely ready</span></h3>
+          <p><strong>16 hrs total, no split requirement.</strong></p>
+          <p style="margin-top:4px;">MO's 3-hr ethics requirement ("EL-prefix") includes MO law &amp; suitability. Our existing Ethics course likely satisfies this.</p>
+          <p style="margin-top:4px;" class="muted">Action: Verify with MO DOI. No new content expected.</p>
+        </div>
+        <div class="box orange" style="text-align:left;">
+          <h3>FL — Florida <span class="tag-orange" style="font-size:0.9em;">Blocked</span></h3>
+          <p><strong>24 hrs + mandatory 4-hr FL Law &amp; Ethics Update each cycle.</strong></p>
+          <p style="margin-top:4px;">Must be license-type specific — separate versions for L&amp;H and P&amp;C producers.</p>
+          <p style="margin-top:4px;" class="muted">Action: Build two 4-hr FL-specific courses. High priority — large licensee population.</p>
+        </div>
+      </div>
     </section>
 
     <!-- 9: The plan -->
     <section>
       <h2>The plan</h2>
-      <ul class="phase-list">
+      <ul class="phases">
         <li>
-          <div class="phase-num active">1</div>
-          <div class="phase-content">
-            <h4>Validate in Texas <span style="color:var(--aceable-green); font-size:0.85em;">← We are here</span></h4>
-            <p>Complete build, write quiz/exam questions, submit to TDI. Prove the model works end-to-end.</p>
+          <div class="num now">1</div>
+          <div>
+            <h4>Validate in Texas <span class="tag-green">← We are here</span></h4>
+            <p>Complete build, write quiz/exam questions, submit to TDI. Prove the model end-to-end.</p>
           </div>
         </li>
         <li>
-          <div class="phase-num">2</div>
-          <div class="phase-content">
+          <div class="num">2</div>
+          <div>
             <h4>Scale with existing content — 35 states</h4>
-            <p>Tier 1 (NJ, VT, NC, UT) first — nearly identical to TX. Then roll through Tier 2. Same build pattern, volume execution.</p>
+            <p>Tier 1 first (NJ, VT, NC, UT — near-identical to TX). Then roll through Tier 2. Same playbook, volume execution.</p>
           </div>
         </li>
         <li>
-          <div class="phase-num">3</div>
-          <div class="phase-content">
+          <div class="num">3</div>
+          <div>
             <h4>Higher-hour states</h4>
-            <p>NV and IA use the full catalog — straightforward. Decide on MA and AZ investment.</p>
+            <p>NV and IA: use full catalog, no new content. Decide on MA and AZ investment based on market size.</p>
           </div>
         </li>
         <li>
-          <div class="phase-num">4</div>
-          <div class="phase-content">
+          <div class="num">4</div>
+          <div>
             <h4>State-specific content</h4>
-            <p>FL and NY are highest priority by licensee population. Build state-specific modules as standalone add-ons.</p>
+            <p>FL and NY first — largest licensee populations. Build as standalone add-ons to existing catalog.</p>
           </div>
         </li>
       </ul>
@@ -371,45 +310,46 @@
     <!-- 10: Why this works -->
     <section>
       <h2>Why this approach works</h2>
-      <div class="tier-grid">
-        <div class="tier-card">
-          <h4>Build once</h4>
-          <p>Source courses are never modified. Every state build is a configuration — a manifest that says which chapters to include. No duplicate content.</p>
+      <div class="grid2">
+        <div class="box">
+          <h3>Build once</h3>
+          <p>Source courses are never modified. Every state is a configuration — a manifest that says which chapters to include. No duplicate content, no diverging versions.</p>
         </div>
-        <div class="tier-card">
-          <h4>Scale fast</h4>
-          <p>39 states with identical build steps. Once TX is validated, the playbook is repeatable with minimal additional LX effort.</p>
+        <div class="box">
+          <h3>Scale fast</h3>
+          <p>39 states share the same build steps as TX. Once TX is validated, the playbook repeats with minimal additional LX effort.</p>
         </div>
-        <div class="tier-card">
-          <h4>Future-proof</h4>
-          <p>~13.5 hrs of content held in reserve. When a state needs more hours, we add chapters — we don't start over.</p>
+        <div class="box">
+          <h3>Future-proof</h3>
+          <p>13.5 hrs of content held in reserve. When a state needs more hours, we activate chapters — we don't start over.</p>
         </div>
-        <div class="tier-card">
-          <h4>Low content risk</h4>
-          <p>The vast majority of states need only generic content we already have. State-specific investments are targeted and high-ROI.</p>
+        <div class="box">
+          <h3>Low content risk</h3>
+          <p>The vast majority of states need only generic content we already have. State-specific investment is targeted and high-ROI.</p>
         </div>
       </div>
     </section>
 
-    <!-- 11: Summary -->
-    <section class="title-slide" data-background-color="#1a3d6e">
-      <h2 style="font-size:1.8em; color:white;">The bottom line</h2>
+    <!-- 11: Close -->
+    <section class="dark" data-background-color="#1a3d6e">
+      <h2 style="color:white; font-size:1.6em;">The bottom line</h2>
       <br>
-      <div style="display:flex; gap:32px; justify-content:center; margin:24px 0;">
-        <div style="text-align:center;">
+      <div class="row" style="justify-content:center;">
+        <div style="text-align:center; flex:1;">
           <span style="font-size:3em; font-weight:800; color:#00b894; display:block;">39</span>
-          <span style="color:rgba(255,255,255,0.8); font-size:0.85em;">states ready with existing content</span>
+          <span style="color:rgba(255,255,255,0.75); font-size:0.75em;">states ready with existing content</span>
         </div>
-        <div style="text-align:center;">
+        <div style="text-align:center; flex:1;">
           <span style="font-size:3em; font-weight:800; color:#00b894; display:block;">0</span>
-          <span style="color:rgba(255,255,255,0.8); font-size:0.85em;">new courses needed for Phase 1 &amp; 2</span>
+          <span style="color:rgba(255,255,255,0.75); font-size:0.75em;">new courses needed for Phase 1 &amp; 2</span>
         </div>
-        <div style="text-align:center;">
+        <div style="text-align:center; flex:1;">
           <span style="font-size:3em; font-weight:800; color:#00b894; display:block;">1</span>
-          <span style="color:rgba(255,255,255,0.8); font-size:0.85em;">build pattern, replicated everywhere</span>
+          <span style="color:rgba(255,255,255,0.75); font-size:0.75em;">build pattern, replicated everywhere</span>
         </div>
       </div>
-      <p style="color:rgba(255,255,255,0.75); font-size:0.9em;">Texas is the proof of concept. Once it's approved, we execute the same playbook across the country.</p>
+      <br>
+      <p style="color:rgba(255,255,255,0.7);">Texas is the proof of concept. Once approved, we execute the same playbook across the country.</p>
     </section>
 
   </div>
@@ -423,9 +363,13 @@
     controls: true,
     progress: true,
     slideNumber: true,
-    width: 1100,
-    height: 700,
+    width: 800,
+    height: 500,
     margin: 0.04,
+    minScale: 0.1,
+    maxScale: 2.0,
+    center: true,
+    disableLayout: false,
   });
 </script>
 </body>
