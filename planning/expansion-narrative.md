@@ -47,15 +47,17 @@ Notable flags:
 - SD requires only 10 hrs (single line) / 20 hrs (dual line)
 - GA caps online as self-study (12-hr effective limit — our selection at 10.77 hrs is within cap)
 
-### Tier 3 lower — Non-standard hours, covered by existing content (5 states)
+### Tier 3 — Non-standard hours, all covered by existing content (5 states)
+
+All 5 states can be served with the content we have — no new writing needed. Hours just differ from TX so content selection math is different.
 
 | State | Total Hrs | Approach |
 |---|---|---|
-| MO | 16 | ETH (2.70) + expanded self-study to reach 16 hrs |
-| VA | 16 (single) / 24 (dual) | TX selection works for dual-line; single-line needs trimmed version |
-| KS | 18 | Trimmed content selection from TX baseline |
-| NV | 30 (3-yr) | Full L-version catalog (~37 hrs) covers requirement |
-| IA | 36 (3-yr) | Full L-version catalog (~37 hrs) covers requirement with small buffer |
+| MO | 16 | Trim down from 37 hrs — more than enough content. Verify ethics requirement met by ETH course (likely yes, no new content expected). |
+| VA | 16 (single) / 24 (dual) | TX selection (~24 hrs) works for dual-line. Single-line needs trimmed version. |
+| KS | 18 | Trimmed content selection from TX baseline. |
+| NV | 30 (3-yr) | Full L-version catalog (~37 hrs) covers the 30-hr requirement. |
+| IA | 36 (3-yr) | Full L-version catalog (~37 hrs) covers the 36-hr requirement with a small buffer. |
 
 ---
 
@@ -97,18 +99,21 @@ These states require mandatory state-specific content that our generic courses c
 - Confirm quiz/exam format works in Jarvis
 - Get TDI approval
 
-### Phase 2 — Scale with existing content
+### Phase 2 — Scale with existing content (39 states total)
 - Build Tier 1 states (NJ, VT, NC, UT) — near-zero incremental effort beyond TX
 - Roll through Tier 2 states in volume — same build pattern, largest group
-- Build Tier 3 lower (MO, VA, KS) — minor content selection adjustments
-- Build NV and IA using full catalog — no new content, just full L-version builds
+- Build Tier 3 states (MO, VA, KS, NV, IA) — all fully covered by existing content, just different content selection math
 
-### Phase 3 — Higher-hour states
-- Decide on MA and AZ — assess market size vs. content investment required
-- If yes: identify content gaps and prioritize new course development
+Note: MO, VA, KS need less content than TX (fewer hours required). NV and IA need more — use the full L-version catalog which covers both.
 
-### Phase 4 — State-specific content
-- Prioritize Tier 4 states by market size / strategic value
+### Phase 3 — Generic content gap states (MA and AZ only)
+- MA needs 45–60 hrs; we have ~37 hrs. Gap: 8–23 hrs of additional generic CE content.
+- AZ needs 48 hrs; we have ~37 hrs. Gap: ~11 hrs. Reserve content (13.5 hrs available) may cover AZ entirely before any writing is needed.
+- Decide on MA and AZ investment based on market size.
+
+### Phase 4 — State-specific content (9 blocked states)
+CT, NY, FL, OK, MT, OR, CO, WI, IN all need mandatory state-specific courses that don't exist in our generic catalog.
+- Note: NY, CT, FL etc. have enough HOURS covered by existing content — what's missing is specific required topics (NY Insurance Law, FL Law & Ethics Update, etc.)
 - FL and NY are likely highest priority given licensee population
 - Build state-specific content modules as standalone add-ons to the existing catalog
 
