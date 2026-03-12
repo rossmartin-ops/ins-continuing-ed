@@ -1,0 +1,166 @@
+# NV Content Manifest
+
+State: Nevada
+Requirement: 30 CE hours per 3-year license term
+- No mandatory classroom/self-study split
+- Ethics/consumer protection: minimum 3 hours
+- Self-study: proctored exam required
+
+Hours calculated using standard formula: words ÷ 180 ÷ 50 = credit hours
+
+Target: TX base (23.87 hrs) + reserve content additions to reach ~30 hrs
+
+---
+
+## Classroom Equivalent Courses (16.14 hrs)
+
+Delivery requirements: forced unit progression, embedded quiz per chapter (70% to pass), timed screens, no final exam.
+
+### GEN.INS-CE-ETH — Insurance Ethics and Insurance Fraud
+**2.70 hrs | All levels and chapters included | Covers 3-hr ethics requirement**
+
+| Level | Chapter | Include | Hrs | Topics |
+|---|---|---|---|---|
+| L1: Insurance Ethics | Ch1 | Yes | 0.47 | Introduction, The Need for Ethics in Business |
+| | Ch2 | Yes | 0.61 | Carrier Relationships, Disclosure, Company Loyalty, Handling Money |
+| | Ch3 | Yes | 0.60 | Tips for Ethical Professionals, Elderly Customers, Documentation |
+| L2: Insurance Fraud | Ch1 | Yes | 0.42 | Introduction, Measuring Fraud, Fraud Stats, Consequences |
+| | Ch2 | Yes | 0.57 | Fraud Examples and Red Flags, Property, Contractor, Auto, Staged Accidents |
+| **Total** | | | **2.70** | |
+
+Note: L1 Ch1 has a placeholder welcome page that needs to be personalized before launch.
+
+---
+
+### GEN.INS-CE-LHOPT — Life & Health Insurance Options (expanded)
+**8.60 hrs | All 7 levels | All 13 chapters included**
+
+| Level | Chapter | Include | Hrs | Topics |
+|---|---|---|---|---|
+| L1: Insurance Fundamentals | Ch1 | Yes | 0.85 | What Is Insurance?, Perils, Hazards |
+| L2: Disability Insurance | Ch1 | Yes | 0.75 | Introduction, Injury/Illness, Loss of Ability, Loss of Income |
+| | Ch2 | Yes | 0.60 | Riders: COLA, Future Purchase Option, Waiver of Premium |
+| L3: Term Life Insurance | Ch1 | Yes | 0.58 | Types of Term Life, Renewable/Convertible Policies |
+| L4: Long-Term Care Insurance | Ch1 | Yes | 0.51 | Purpose of LTC Insurance, Levels of Care, Skilled Care |
+| | Ch2 | Yes | 0.92 | Policy Provisions, Benefit Triggers, ADLs, Cognitive Impairment |
+| | Ch3 | Yes | 0.73 | Alternatives: Medicare, Medigap, Medicaid |
+| | Ch4 | Yes | 0.32 | CLASS Act, LTC Partnership Programs |
+| L5: Group Life Insurance | Ch1 | Yes | 0.37 | Group Life Basics, Master Contract, Certificate Holders |
+| | Ch2 | Yes | 0.32 | Group Life Continuation, Conversion Rights |
+| L6: Medicare | Ch1 | Yes | 0.70 | Eligibility (65+, Disabled), Enrollment |
+| | Ch2 | Yes | 0.57 | Medicare Part B: Office Visits, Charges, Non-Participating Providers |
+| | Ch3 | Yes | 0.56 | Medicare Part D: Formularies, Cost-Saving, Enrollment Periods |
+| L7: Viatical and Life Settlements | Ch1 | Yes | 0.76 | Viatical Settlements, Life Settlements, Licensing |
+| **Total** | | | **8.60** | |
+
+---
+
+### GEN.INS-CE-PCPER — Understanding Personal Lines Property & Casualty Insurance (expanded)
+**4.84 hrs | 4 of 6 levels | 9 of 13 chapters**
+
+| Level | Chapter | Include | Hrs | Topics |
+|---|---|---|---|---|
+| L1: P&C Fundamentals | Ch1 | Yes | 0.23 | Introduction to Property and Casualty Insurance |
+| | Ch2 | Yes | 0.48 | Types of Policies, Insurable Interest, Indemnity |
+| L2: Homeowners Insurance | Ch1 | Yes | 1.03 | Mortgage Requirements, Qualifying, Named Insured |
+| | Ch2 | Yes | 0.63 | Exclusions, Vacancy Clauses, Replacement Costs |
+| | Ch3 | **No — drop chapter** | 0.30 | Children and Coverage (thin, narrow) |
+| | Ch4 | Yes | 0.60 | Trees/Debris, Motorized Vehicles, Watercraft |
+| L3: Personal Auto Insurance | Ch1 | Yes | 0.71 | Liability Coverage, Coverage Limits, Who's Covered |
+| | Ch2 | Yes | 0.62 | Kinds of Covered Autos, New Vehicles, Driving Others' Cars |
+| | Ch3 | Yes | 0.62 | After an Accident, Transportation Expenses, Post-Accident Duties |
+| L4: Insurance Regulation | Ch1 | Yes | 0.67 | State Insurance Regulation, NAIC, Market Conduct |
+| | Ch2 | Yes | 0.30 | Rate Filing, Form Approval, Guaranty Funds |
+| L5: Fair Claims Practices | Ch1 | **No — drop level** | 0.69 | — |
+| L6: Insuring Valuables and Collectibles | Ch1 | **No — drop level** | 0.83 | — |
+| | Ch2 | **No — drop level** | 0.49 | — |
+| **Total** | | | **5.89** | |
+
+---
+
+## Self-Study Courses (13.84 hrs)
+
+Delivery requirements: final exam only (no forced progression, no checkpoints). 10 questions per credit hour, 70% passing score.
+**IMPORTANT: Nevada requires a proctored exam for all self-study credit. All self-study final exams must be administered under approved proctoring (online or in-person). Platform must support proctoring integration or partner with an approved proctoring vendor before NV launch.**
+
+### GEN.INS-CE-LHPRD — Life & Health Products and Compliance (expanded)
+**7.65 hrs | 5 of 6 levels | 10 of 11 chapters | Final exam: 77 questions minimum**
+
+| Level | Chapter | Include | Hrs | Exam Qs | Topics |
+|---|---|---|---|---|---|
+| L1: Insurance Regulation | Ch1 | **No — drop level** | 0.43 | — | — |
+| | Ch2 | **No — drop level** | 0.64 | — | — |
+| L2: Life Insurance | Ch1 | Yes | 0.60 | 6 | Purposes of Life Insurance, Determining Needs |
+| | Ch2 | Yes | 0.73 | 7 | How Policies Work, Parties, Ownership Rights, Assignment |
+| | Ch3 | Yes | 0.87 | 9 | Types: Term, Decreasing Term, Whole Life |
+| L3: Health Insurance | Ch1 | Yes | 0.81 | 8 | Individual Market, Applying, Insurance Options |
+| | Ch2 | Yes | 0.97 | 10 | Reimbursement, Service Plans, Blue Cross/Blue Shield, Managed Care |
+| L4: Health Savings Accounts | Ch1 | Yes | 0.47 | 5 | HSA Eligibility, Contributions, Qualified Expenses |
+| L5: Annuities | Ch1 | Yes | 0.51 | 5 | Annuity Basics, Types of Annuities, Fixed vs. Variable |
+| | Ch2 | Yes | 0.59 | 6 | Annuity Contract Provisions, Surrender Charges |
+| | Ch3 | Yes | 1.14 | 11 | Annuity Taxation, Qualified vs. Non-Qualified, Distribution Rules |
+| L6: HIPAA Privacy and Security | Ch1 | Yes | 0.50 | 5 | HIPAA Overview, Health Information Privacy Rules |
+| | Ch2 | Yes | 0.93 | 9 | Authorization/Consent, Permissible Use of PHI, Treatment and Payment |
+| | Ch3 | **No — drop chapter** | 0.32 | — | Security Safeguards (IT-focused, less relevant for producers) |
+| **Total** | | | **7.65** | **77** | |
+
+---
+
+### GEN.INS-CE-PCCOM — Understanding Commercial Property & Casualty Insurance (expanded)
+**6.19 hrs | 5 of 8 levels | 13 of 17 chapters | Final exam: 62 questions minimum**
+
+| Level | Chapter | Include | Hrs | Exam Qs | Topics |
+|---|---|---|---|---|---|
+| L1: Risk Management | Ch1 | Yes | 0.50 | 5 | Risk Management vs. Insurance, The Broader Picture |
+| | Ch2 | Yes | 0.65 | 6 | Role of Risk Managers, Risk Management Process |
+| L2: Commercial General Liability | Ch1 | Yes | 0.24 | 2 | Basic Concepts, Premises/Operations, Product Liability |
+| | Ch2 | Yes | 0.37 | 4 | Bodily Injury and Property Damage, Common Exclusions |
+| | Ch3 | Yes | 0.45 | 4 | Personal and Advertising Injury, Defense Costs, Occurrence vs. Claims-Made |
+| L3: Commercial Property Insurance | Ch1 | Yes | 0.44 | 4 | Declarations Page, Policy Period, Covered Loss |
+| | Ch2 | Yes | 0.26 | 3 | Covered Perils, Excluded Perils |
+| | Ch3 | Yes | 0.39 | 4 | Deductibles, Coinsurance, Prorated Settlements, Agreed Value |
+| L4: Business Interruption Insurance | Ch1 | Yes | 0.65 | 6 | Business Income Coverage, Extra Expense, Period of Restoration |
+| L5: Commercial Auto Insurance | Ch1 | Yes | 0.79 | 8 | Business Auto Policy, Covered Autos, Liability, Physical Damage |
+| L6: Workers Compensation Insurance | Ch1 | Yes | 0.55 | 5 | History of Workers' Comp, No-Fault Systems |
+| | Ch2 | Yes | 0.86 | 9 | Benefits: Medical, Wage Replacement, Levels of Disability |
+| | Ch3 | Yes | 0.65 | 7 | Standard Policy, Employers Liability, Third-Party Lawsuits, Exclusions |
+| L7: Errors and Omissions Insurance | Ch1 | **No — drop level** | 0.37 | — | — |
+| | Ch2 | **No — drop level** | 0.43 | — | — |
+| L8: Employment Practices Liability | Ch1 | **No — drop level** | 0.39 | — | — |
+| | Ch2 | **No — drop level** | 0.46 | — | — |
+| **Total** | | | **6.35** | **62** | |
+
+---
+
+## NV Hours Summary
+
+| Course | Type | Hrs |
+|---|---|---|
+| GEN.INS-CE-ETH | Classroom Equiv | 2.70 |
+| GEN.INS-CE-LHOPT | Classroom Equiv | 8.60 |
+| GEN.INS-CE-PCPER | Classroom Equiv | 5.89 |
+| GEN.INS-CE-LHPRD | Self-Study (proctored) | 7.65 |
+| GEN.INS-CE-PCCOM | Self-Study (proctored) | 6.35 |
+| **Classroom Equiv Total** | | **17.19 hrs** |
+| **Self-Study Total** | | **14.00 hrs** |
+| **Grand Total** | | **31.19 hrs** (meets 30-hr requirement; ~1 hr buffer) |
+
+Note: If NV filing requires exactly 30 hrs, trim PCPER L4 Ch2 (0.30 hrs) and PCCOM L5 Ch1 (0.79 hrs) from the self-study to land closer to 30.10 hrs. The above selection is a practical working set; adjust as needed during state filing review.
+
+## NV Build Work Summary
+
+| Item | Count |
+|---|---|
+| Quiz checkpoints (classroom equiv) | 24 |
+| Final exam questions — LHPRD (proctored) | 77 minimum |
+| Final exam questions — PCCOM (proctored) | 62 minimum |
+| **Total final exam questions** | **139 minimum** |
+
+## NV State-Specific Notes
+
+- Nevada has a 3-year renewal cycle (30 hrs per term) — all content must be completed within the 3-year window.
+- Self-study requires a proctored exam in Nevada. The platform must support approved online proctoring (e.g., ProctorU, Examity, or similar NAIC-accepted vendor) before NV launch. This is a hard regulatory requirement — do not launch self-study courses in NV without proctoring in place.
+- Annuity training: 1x 4-hour initial course required; additional 1-hour buyer interaction (BI) update required — neither is covered by this catalog; must be sourced as standalone courses.
+- LTC training: 8-hour initial + 4-hour renewal requirement — not covered by this catalog; flag for producers.
+- Flood insurance: 1x 3-hour course required for P&C licensees — not covered by this catalog; must be sourced separately.
+- No carryover information confirmed; verify with NV DOI before launch.
