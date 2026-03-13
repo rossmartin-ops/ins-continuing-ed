@@ -1,9 +1,14 @@
 # MO Content Manifest
 
 State: Missouri
+Tier: 4 (Blocked — missing state-specific ethics course)
 Requirement: 16 CE hours per 2-year license term
 - No mandatory classroom/self-study split
-- Ethics/consumer protection: minimum 3 hours (MO ethics requirement includes MO law and suitability — the ETH course covers this)
+- Ethics: 3 hours minimum — **EL-prefix required** (must cover ethics, Missouri law, suitability, AND producer duties/obligations to MO DCI in a single MO Director-approved course)
+
+Launch status: BLOCKED pending MO.INS-CE-ETH creation. The generic GEN.INS-CE-ETH course does not cover Missouri insurance law or MO-specific producer duties and cannot receive an EL course designation. All other content is available.
+
+Authority: RSMo § 375.020; 20 CSR 700-3.200 Section (2)
 
 Hours calculated using standard formula: words ÷ 180 ÷ 50 = credit hours
 
@@ -86,31 +91,51 @@ Note: L5 Annuities is excluded here because Missouri has a separate 4-hour annui
 
 ---
 
-## MO Hours Summary
+## MO Hours Summary (Available Content)
 
-| Course | Type | Hrs |
-|---|---|---|
-| GEN.INS-CE-ETH | Classroom Equiv | 2.70 |
-| GEN.INS-CE-LHPRD | Self-Study | 7.16 |
-| GEN.INS-CE-PCCOM | Self-Study | 6.14 |
-| **Classroom Equiv Total** | | **2.70 hrs** |
-| **Self-Study Total** | | **13.30 hrs** |
-| **Grand Total** | | **16.00 hrs** |
+| Course | Type | Hrs | Status |
+|---|---|---|---|
+| MO.INS-CE-ETH (new) | Classroom Equiv | 3.00 | **MISSING — BLOCKED** |
+| GEN.INS-CE-LHPRD | Self-Study | 7.16 | Available |
+| GEN.INS-CE-PCCOM | Self-Study | 6.14 | Available |
+| **Grand Total with MO ethics** | | **16.30 hrs** | |
 
 ## MO Build Work Summary
 
-| Item | Count |
-|---|---|
-| Quiz checkpoints (classroom equiv — ETH only) | 5 |
-| Final exam questions — LHPRD | 72 minimum |
-| Final exam questions — PCCOM | 62 minimum |
-| **Total final exam questions** | **134 minimum** |
+| Item | Count | Status |
+|---|---|---|
+| MO.INS-CE-ETH course (3 hrs) | ~27,000 words + 30 exam questions | MISSING |
+| Quiz checkpoints (if classroom equiv) | 5 | Pending course creation |
+| Final exam questions — LHPRD | 72 minimum | Available |
+| Final exam questions — PCCOM | 62 minimum | Available |
 
-## MO State-Specific Notes
+## ⚠️ MISSING CONTENT — BLOCKED
 
-- Missouri has no mandatory classroom/self-study split; all 16 hrs may be self-study. The ETH course is delivered as classroom equivalent to satisfy the ethics credit type requirement, but MO does not otherwise mandate classroom hours.
-- Missouri ethics (EL-prefix) requirement includes MO law and suitability topics. The ETH course at 2.70 hrs exceeds the 3-hr ethics minimum when rounded — confirm with MO DOI filing that the ETH course content qualifies under the EL designation.
-- Annuity training: 1x 4-hour course required for annuity products — not covered by this catalog; must be sourced separately. The LHPRD L5 Annuities chapters are excluded from this manifest to avoid conflicts with the dedicated annuity requirement.
-- LTC training: 8-hour initial + 4-hour renewal requirement — not covered by this catalog; flag for producers.
-- Some carryover of excess CE hours is permitted in Missouri; confirm the carryover limit with MO DOI before launch.
-- No proctored exam required for self-study delivery.
+### What is missing:
+
+**MO.INS-CE-ETH — Missouri Ethics, Law, and Producer Duties (3 hrs)**
+
+Required under RSMo § 375.020 and 20 CSR 700-3.200 Section (2). The course must cover all four topics in a single MO Director-approved course:
+1. **Business ethics** (including sales suitability)
+2. **Missouri insurance law** (MO statutes, unfair trade practices, MO DOI regulations)
+3. **Producer duties and obligations to the department**
+4. **Suitability** in product recommendations
+
+The generic GEN.INS-CE-ETH course covers ethics and fraud but does not cover Missouri insurance law or MO-specific producer duties. It cannot receive an EL course designation from the MO Director without this content.
+
+**Course must be submitted to and approved by the Missouri Director** before it can count toward the EL requirement. The EL prefix in the course code is the signal that Director approval has been granted.
+
+### What this unblocks:
+
+Once MO.INS-CE-ETH is built and approved:
+- Full MO program can launch
+- The remaining 13.30 hrs (LHPRD + PCCOM) are ready to deploy now
+- Total with MO ethics: ~16.30 hrs (above 16-hr minimum — acceptable, no cap)
+
+### MO State-Specific Notes
+
+- No mandatory classroom/self-study split; all 16 hrs may be self-study. MO.INS-CE-ETH could be either delivery type.
+- Annuity training: 1x 4-hr course required — not covered by this catalog; source separately. LHPRD L5 Annuities chapters excluded to avoid filing conflicts.
+- LTC: 8-hr initial + 4-hr renewal — not in this catalog; flag for producers.
+- No proctored exam required for self-study.
+- Carryover: some excess hours permitted; confirm limit with MO DCI before launch.

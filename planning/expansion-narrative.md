@@ -47,13 +47,14 @@ Notable flags:
 - SD requires only 10 hrs (single line) / 20 hrs (dual line)
 - GA caps online as self-study (12-hr effective limit — our selection at 10.77 hrs is within cap)
 
-### Tier 3 — Non-standard hours, all covered by existing content (5 states)
+### Tier 3 — Non-standard hours, all covered by existing content (4 states)
 
-All 5 states can be served with the content we have — no new writing needed. Hours just differ from TX so content selection math is different.
+All 4 states can be served with the content we have — no new writing needed. Hours just differ from TX so content selection math is different.
+
+Note: MO was originally in this group but has been moved to Tier 4 — its mandatory 3-hr ethics requirement (EL-prefix) requires Missouri-specific content that our generic ETH course cannot satisfy. See Tier 4 below.
 
 | State | Total Hrs | Approach |
 |---|---|---|
-| MO | 16 | Trim down from 37 hrs — more than enough content. Verify ethics requirement met by ETH course (likely yes, no new content expected). |
 | VA | 16 (single) / 24 (dual) | TX selection (~24 hrs) works for dual-line. Single-line needs trimmed version. |
 | KS | 18 | Trimmed content selection from TX baseline. |
 | NV | 30 (3-yr) | Full L-version catalog (~37 hrs) covers the 30-hr requirement. |
@@ -74,12 +75,13 @@ Decision required: Are these states worth the content investment? If yes, identi
 
 ---
 
-## The 9-State Blocked Group (Tier 4)
+## The 10-State Blocked Group (Tier 4)
 
 These states require mandatory state-specific content that our generic courses cannot cover. Cannot launch until the missing content is built.
 
 | State | Missing Content | Hrs | Partial Launch Possible? |
 |---|---|---|---|
+| MO | MO Ethics, Law & Producer Duties (EL-prefix course) | 3 hrs/cycle | No — all other MO content (13 hrs) is ready |
 | CT | CT Insurance Law & Ethics | 3 hrs/cycle | No |
 | NY | NY Insurance Law + Diversity/Inclusion/Bias | 1 hr each/cycle | No |
 | FL | FL Law & Ethics Update (license-type specific) | 4 hrs/cycle | No |
@@ -99,22 +101,23 @@ These states require mandatory state-specific content that our generic courses c
 - Confirm quiz/exam format works in Jarvis
 - Get TDI approval
 
-### Phase 2 — Scale with existing content (39 states total)
+### Phase 2 — Scale with existing content (38 states total)
 - Build Tier 1 states (NJ, VT, NC, UT) — near-zero incremental effort beyond TX
 - Roll through Tier 2 states in volume — same build pattern, largest group
-- Build Tier 3 states (MO, VA, KS, NV, IA) — all fully covered by existing content, just different content selection math
+- Build Tier 3 states (VA, KS, NV, IA) — all fully covered by existing content, just different content selection math
 
-Note: MO, VA, KS need less content than TX (fewer hours required). NV and IA need more — use the full L-version catalog which covers both.
+Note: VA and KS need less content than TX (fewer hours). NV and IA need more — use the full L-version catalog which covers both. MO has been moved to Tier 4 due to its state-specific ethics requirement.
 
 ### Phase 3 — Generic content gap states (MA and AZ only)
 - MA needs 45–60 hrs; we have ~37 hrs. Gap: 8–23 hrs of additional generic CE content.
 - AZ needs 48 hrs; we have ~37 hrs. Gap: ~11 hrs. Reserve content (13.5 hrs available) may cover AZ entirely before any writing is needed.
 - Decide on MA and AZ investment based on market size.
 
-### Phase 4 — State-specific content (9 blocked states)
-CT, NY, FL, OK, MT, OR, CO, WI, IN all need mandatory state-specific courses that don't exist in our generic catalog.
-- Note: NY, CT, FL etc. have enough HOURS covered by existing content — what's missing is specific required topics (NY Insurance Law, FL Law & Ethics Update, etc.)
-- FL and NY are likely highest priority given licensee population
+### Phase 4 — State-specific content (10 blocked states)
+MO, CT, NY, FL, OK, MT, OR, CO, WI, IN all need mandatory state-specific courses that don't exist in our generic catalog.
+- All 10 have enough HOURS covered — what's missing is specific required content (MO Ethics/Law, NY Insurance Law, FL Law & Ethics Update, etc.)
+- MO is the simplest of the 10 — only one 3-hr course needed, all other MO content is ready
+- FL and NY are likely highest priority after MO given licensee population
 - Build state-specific content modules as standalone add-ons to the existing catalog
 
 ---

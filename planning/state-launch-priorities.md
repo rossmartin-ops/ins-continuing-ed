@@ -63,7 +63,6 @@ Full flexibility on delivery mix. Need hour math adjusted but no new content. La
 
 | State | Total Hrs | Renewal | Key Notes |
 |---|---|---|---|
-| MO | 16 | 2 yr | Ethics 3 hrs (EL-prefix includes MO law/suitability — may be addressable with ETH course); Annuity 1x 4-hr |
 | VA | 16 (single) / 24 (dual) | 2 yr | Flood 3-hr (1x P&C); Annuity 1x 4-hr; carryover permitted |
 | KS | 18 | 2 yr | Annuity 1x 4-hr; Flood 1x 3-hr; no carryover |
 | NV | 30 | 3 yr | Self-study requires proctored exam; Annuity 1x 4-hr + 1-hr BI update; LTC 8+4; Flood 1x 3-hr |
@@ -88,6 +87,7 @@ Cannot launch in these states until the required state-specific content is creat
 | CO | Homeowners insurance CE | 3 hrs (mandatory, each cycle, P&C/Personal Lines) | 24 hrs total; Annuity 1x 4-hr; LTC 16-hr initial + 5-hr ongoing |
 | WI | WI-specific Medicaid/LTC info | 1 hr (mandatory, after initial LTC training) | 24 hrs total; only blocks LTC-licensed producers; others may be launchable |
 | IN | Flood CE (recurring) | 3 hrs every renewal (P&C selling NFIP) | Unlike all other states where flood is 1x — IN requires it every renewal cycle |
+| MO | MO.INS-CE-ETH — Missouri Ethics, Law & Producer Duties | 3 hrs (mandatory, each cycle, EL-prefix required) | 16 hrs total; generic ETH course cannot qualify — needs MO insurance law, MO producer duties, suitability all in one Director-approved course. All other 13 hrs available. Authority: RSMo § 375.020; 20 CSR 700-3.200(2) |
 
 ---
 
